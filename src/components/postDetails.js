@@ -5,7 +5,7 @@ const PostDetails = ({ post }) => {
   const { dispatch } = usePostsContext()
 
   const handleClick = async () => {
-    const response = await fetch('api/posts/' + post._id, {
+    const response = await fetch('https://compiled-mern-hszc.vercel.app/api/posts/' + post._id, {
       method: 'DELETE'
     })
     const json = await response.json()
