@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchPosts = async () => {
-            const response = await fetch ('/api/posts')
+            const response = await fetch ('https://compiled-mern-hszc.vercel.app/api/posts')
             const json = await response.json()
 
             if(response.ok) {
