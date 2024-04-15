@@ -14,7 +14,7 @@ const PostingForm = () => {
 
     const post = { title, user, tag, body };
 
-    const response = await fetch("https://poggers-drab.vercel.app/api/posts", {
+    const response = await fetch("https://compiled-mern-hszc.vercel.app/api/posts", {
       method: "POST",
       body: JSON.stringify(post),
       headers: {
